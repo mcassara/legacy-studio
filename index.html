@@ -4,121 +4,437 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legacy Studio — Marketing that compounds.</title>
-    <meta name="description" content="Legacy Studio — a full-service marketing studio building durable brands through SEO, paid media, social, content and design.">
+    <meta name="description" content="A full-stack marketing studio building durable brands — SEO, paid media, social, content, branding, agentic support, and VA operations under one roof.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #fff; }
-        .hero { min-height: 100vh; display: flex; flex-direction: column; }
+        body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #fff; line-height: 1.6; }
+        html { scroll-behavior: smooth; }
         .gradient-text {
             background: linear-gradient(135deg, #fff 0%, #888 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
     </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="text-xl font-semibold tracking-tight">LEGACY STUDIO</div>
+            <a href="#top" class="text-xl font-semibold tracking-tight hover:text-gray-300 transition">LEGACY STUDIO</a>
             <div class="hidden md:flex items-center gap-8">
-                <a href="#philosophy" class="text-sm text-gray-400 hover:text-white transition">Philosophy</a>
                 <a href="#work" class="text-sm text-gray-400 hover:text-white transition">Work</a>
                 <a href="#services" class="text-sm text-gray-400 hover:text-white transition">Services</a>
-                <a href="#contact" class="text-sm text-gray-400 hover:text-white transition">Contact</a>
+                <a href="#process" class="text-sm text-gray-400 hover:text-white transition">Process</a>
+                <a href="#about" class="text-sm text-gray-400 hover:text-white transition">About</a>
             </div>
-            <a href="#contact" class="px-5 py-2 bg-white text-black text-sm font-medium rounded-full hover:bg-gray-200 transition">
-                Book a Call
+            <a href="mailto:Mark@legacystudio.cc" class="px-5 py-2 bg-white text-black text-sm font-medium rounded-full hover:bg-gray-200 transition flex items-center gap-2">
+                Start a project <span>→</span>
             </a>
         </div>
     </nav>
 
     <!-- Hero -->
-    <section class="hero justify-center items-center text-center px-6 pt-20">
-        <h1 class="text-5xl md:text-7xl font-semibold tracking-tight mb-6">
-            <span class="gradient-text">Marketing that</span><br>
-            <span class="gradient-text">compounds.</span>
-        </h1>
-        <p class="text-xl text-gray-400 max-w-2xl mb-10">
-            A full-service marketing studio building durable brands through SEO, paid media, social, content and design.
-        </p>
-        <div class="flex gap-4">
-            <a href="#contact" class="px-8 py-4 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition">
-                Book a Call
-            </a>
-            <a href="#work" class="px-8 py-4 border border-white/20 text-white font-medium rounded-full hover:bg-white/10 transition">
-                View Work
-            </a>
+    <section id="top" class="min-h-screen flex flex-col justify-center px-6 pt-24">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-4 text-sm text-gray-500 mb-8">
+                <span>[ 01 ] Mark Cassara — Founder</span>
+                <span>[ 02 ] Full-stack studio</span>
+                <span>[ 03 ] Celina, TX</span>
+                <span>[ 04 ] National ops</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight leading-tight mb-8">
+                <div>Marketing</div>
+                <div>that <span class="gradient-text">compounds.</span></div>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mb-10">
+                A full-stack marketing studio building durable brands — SEO, paid media, social, content, branding, agentic support, and VA operations under one roof.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#work" class="inline-flex items-center gap-2 px-8 py-4 border border-white/20 text-white font-medium rounded-full hover:bg-white/10 transition">
+                    See the work <span>↗</span>
+                </a>
+                <a href="mailto:Mark@legacystudio.cc" class="inline-flex items-center gap-2 px-8 py-4 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition">
+                    Start a project <span>→</span>
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Philosophy Section -->
-    <section id="philosophy" class="py-24 px-6">
+    <!-- Selected Clients -->
+    <section class="py-12 px-6 border-y border-white/10">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-sm text-gray-500 uppercase tracking-widest mb-12">Philosophy</h2>
+            <p class="text-sm text-gray-500 mb-8">Selected clients — 2024 / 2025</p>
+            <div class="flex flex-wrap gap-x-8 gap-y-4 text-gray-400">
+                <span>/ MORPH RENTALS</span>
+                <span>/ SBZ EVENTS</span>
+                <span>/ LEGACY WEALTH</span>
+                <span>/ LEGACY ARMY</span>
+                <span>/ CORE THERAPIES</span>
+                <span>/ OXYGEN RT</span>
+                <span>/ THE BAIL KING</span>
+                <span>/ HBOT USA</span>
+                <span>/ WEALTH ACADEMY</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-sm text-gray-500 uppercase tracking-widest mb-4">[ Capabilities ]</p>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-16">A full-service stack — built to ship work, not decks.</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="p-8 border border-white/10 rounded-2xl hover-lift bg-white/5">
+                    <span class="text-sm text-gray-500">01 / 08</span>
+                    <h3 class="text-xl font-semibold mt-2 mb-3">Search (SEO)</h3>
+                    <p class="text-gray-400 text-sm mb-4">Technical audits, programmatic content engines and authority links — built to compound.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Technical SEO</li>
+                        <li>• Content systems</li>
+                        <li>• Backlinks</li>
+                    </ul>
+                </article>
+                
+                <article class="p-8 border border-white/10 rounded-2xl hover-lift bg-white/5">
+                    <span class="text-sm text-gray-500">02 / 08</span>
+                    <h3 class="text-xl font-semibold mt-2 mb-3">Paid Media</h3>
+                    <p class="text-gray-400 text-sm mb-4">Meta, Google, TikTok and YouTube — full-funnel buying with daily creative iteration.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Meta + Google</li>
+                        <li>• Creative testing</li>
+                        <li>• Attribution</li>
+                    </ul>
+                </article>
+                
+                <article class="p-8 border border-white/10 rounded-2xl hover-lift bg-white/5">
+                    <span class="text-sm text-gray-500">03 / 08</span>
+                    <h3 class="text-xl font-semibold mt-2 mb-3">Social Media</h3>
+                    <p class="text-gray-400 text-sm mb-4">Native, platform-fluent content. Calendars, community management and viral hooks.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• IG / TikTok</li>
+                        <li>• Community</li>
+                        <li>• Short-form</li>
+                    </ul>
+                </article>
+                
+                <article class="p-8 border border-white/10 rounded-2xl hover-lift bg-white/5">
+                    <span class="text-sm text-gray-500">04 / 08</span>
+                    <h3 class="text-xl font-semibold mt-2 mb-3">Content</h3>
+                    <p class="text-gray-400 text-sm mb-4">Editorial, video and lifecycle content that earns trust and turns readers into buyers.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Editorial</li>
+                        <li>• Video</li>
+                        <li>• Email</li>
+                    </ul>
+                </article>
+                
+                <article class="p-8 border border-white/10 rounded-2xl hover-lift bg-white/5">
+                    <span class="text-sm text-gray-500">05 / 08</span>
+                    <h3 class="text-xl font-semibold mt-2 mb-3">Branding & Web</h3>
+                    <p class="text-gray-400 text-sm mb-4">Identity systems, naming, visual languages and websites that look unmistakable.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Identity</li>
+                        <li>• Web</li>
+                        <li>• Systems</li>
+                    </ul>
+                </article>
+                
+                <article class="p-8 border border-white/10 rounded-2xl hover-lift bg-white/5">
+                    <span class="text-sm text-gray-500">06 / 08</span>
+                    <h3 class="text-xl font-semibold mt-2 mb-3">Agentic Support</h3>
+                    <p class="text-gray-400 text-sm mb-4">AI-powered customer and tech support agents — trained on your brand voice and SOPs, 24/7.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• AI agents</li>
+                        <li>• Tech support</li>
+                        <li>• CX automation</li>
+                    </ul>
+                </article>
+                
+                <article class="p-8 border border-white/10 rounded-2xl hover-lift bg-white/5">
+                    <span class="text-sm text-gray-500">07 / 08</span>
+                    <h3 class="text-xl font-semibold mt-2 mb-3">Full-Stack VAs</h3>
+                    <p class="text-gray-400 text-sm mb-4">Vetted virtual assistants and project managers embedded into your ops — from inbox to invoicing.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Ops VAs</li>
+                        <li>• PMs</li>
+                        <li>• Back-office</li>
+                    </ul>
+                </article>
+                
+                <article class="p-8 border border-white/10 rounded-2xl hover-lift bg-white/5">
+                    <span class="text-sm text-gray-500">08 / 08</span>
+                    <h3 class="text-xl font-semibold mt-2 mb-3">Sustainable Solutions</h3>
+                    <p class="text-gray-400 text-sm mb-4">Long-horizon systems, not stunt campaigns — playbooks your team can run after the engagement ends.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Playbooks</li>
+                        <li>• SOPs</li>
+                        <li>• Hand-off</li>
+                    </ul>
+                </article>
+            </div>
+            
+            <div class="mt-16 p-8 border border-white/10 rounded-2xl">
+                <p class="text-sm text-gray-500 mb-2">/ Have a brief?</p>
+                <p class="text-xl text-gray-400 mb-4">Tell us where you want to be in 12 months.</p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-white font-medium hover:gap-4 transition">
+                    Get in touch → <span>→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section id="work" class="py-24 px-6 bg-white/5">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-sm text-gray-500 uppercase tracking-widest mb-4">[ Selected work — 2024/25 ]</p>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-4">Brands we've helped grow, ship, and scale.</h2>
+            <p class="text-xl text-gray-400 mb-16">Real client websites — captured live.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="https://morphrentalsny.com" target="_blank" class="group block border border-white/10 rounded-2xl overflow-hidden hover-lift bg-black">
+                    <div class="h-48 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+                        <span class="text-gray-600 text-4xl">🏠</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500">Real Estate / Rentals</p>
+                        <h3 class="text-xl font-semibold mt-2 mb-2 group-hover:text-gray-300 transition">Morph Rentals</h3>
+                        <p class="text-gray-400 text-sm">Brand + booking experience for a NY luxury short-term rental operator.</p>
+                        <span class="inline-flex items-center gap-1 mt-4 text-sm text-gray-500 group-hover:text-white transition">
+                            Preview <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="https://sbzevents.com" target="_blank" class="group block border border-white/10 rounded-2xl overflow-hidden hover-lift bg-black">
+                    <div class="h-48 bg-gradient-to-br from-purple-900 to-gray-900 flex items-center justify-center">
+                        <span class="text-gray-600 text-4xl">🎭</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500">Events / Hospitality</p>
+                        <h3 class="text-xl font-semibold mt-2 mb-2 group-hover:text-gray-300 transition">SBZ Events</h3>
+                        <p class="text-gray-400 text-sm">Editorial site and content engine for a high-end events agency.</p>
+                        <span class="inline-flex items-center gap-1 mt-4 text-sm text-gray-500 group-hover:text-white transition">
+                            Preview <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="https://legacywealth.co" target="_blank" class="group block border border-white/10 rounded-2xl overflow-hidden hover-lift bg-black">
+                    <div class="h-48 bg-gradient-to-br from-yellow-900 to-gray-900 flex items-center justify-center">
+                        <span class="text-gray-600 text-4xl">💰</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500">Finance / Wealth</p>
+                        <h3 class="text-xl font-semibold mt-2 mb-2 group-hover:text-gray-300 transition">Legacy Wealth Co.</h3>
+                        <p class="text-gray-400 text-sm">Authority site and lead pipeline for a multi-vertical wealth firm.</p>
+                        <span class="inline-flex items-center gap-1 mt-4 text-sm text-gray-500 group-hover:text-white transition">
+                            Preview <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="https://legacywealthacademy.com" target="_blank" class="group block border border-white/10 rounded-2xl overflow-hidden hover-lift bg-black">
+                    <div class="h-48 bg-gradient-to-br from-blue-900 to-gray-900 flex items-center justify-center">
+                        <span class="text-gray-600 text-4xl">📚</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500">Education / Finance</p>
+                        <h3 class="text-xl font-semibold mt-2 mb-2 group-hover:text-gray-300 transition">Legacy Wealth Academy</h3>
+                        <p class="text-gray-400 text-sm">Course funnel + organic growth for Mark Cassara's investing academy.</p>
+                        <span class="inline-flex items-center gap-1 mt-4 text-sm text-gray-500 group-hover:text-white transition">
+                            Preview <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="https://legacyarmy.com" target="_blank" class="group block border border-white/10 rounded-2xl overflow-hidden hover-lift bg-black">
+                    <div class="h-48 bg-gradient-to-br from-red-900 to-gray-900 flex items-center justify-center">
+                        <span class="text-gray-600 text-4xl">🎖️</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500">Community / Coaching</p>
+                        <h3 class="text-xl font-semibold mt-2 mb-2 group-hover:text-gray-300 transition">Legacy Army</h3>
+                        <p class="text-gray-400 text-sm">Membership platform and content cadence for a private community.</p>
+                        <span class="inline-flex items-center gap-1 mt-4 text-sm text-gray-500 group-hover:text-white transition">
+                            Preview <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="https://core-therapies.com" target="_blank" class="group block border border-white/10 rounded-2xl overflow-hidden hover-lift bg-black">
+                    <div class="h-48 bg-gradient-to-br from-green-900 to-gray-900 flex items-center justify-center">
+                        <span class="text-gray-600 text-4xl">🏥</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500">Healthcare / Therapy</p>
+                        <h3 class="text-xl font-semibold mt-2 mb-2 group-hover:text-gray-300 transition">Core Therapies</h3>
+                        <p class="text-gray-400 text-sm">Local SEO + web redesign for a multi-location physical therapy group.</p>
+                        <span class="inline-flex items-center gap-1 mt-4 text-sm text-gray-500 group-hover:text-white transition">
+                            Preview <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="https://oxygenrt.com" target="_blank" class="group block border border-white/10 rounded-2xl overflow-hidden hover-lift bg-black">
+                    <div class="h-48 bg-gradient-to-br from-blue-800 to-gray-900 flex items-center justify-center">
+                        <span class="text-gray-600 text-4xl">💨</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500">Healthcare / Wellness</p>
+                        <h3 class="text-xl font-semibold mt-2 mb-2 group-hover:text-gray-300 transition">Oxygen RT</h3>
+                        <p class="text-gray-400 text-sm">Patient-acquisition site for an oxygen therapy practice.</p>
+                        <span class="inline-flex items-center gap-1 mt-4 text-sm text-gray-500 group-hover:text-white transition">
+                            Preview <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="https://bailkingny.com" target="_blank" class="group block border border-white/10 rounded-2xl overflow-hidden hover-lift bg-black">
+                    <div class="h-48 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center">
+                        <span class="text-gray-600 text-4xl">⚖️</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500">Legal / Services</p>
+                        <h3 class="text-xl font-semibold mt-2 mb-2 group-hover:text-gray-300 transition">The Bail King NY</h3>
+                        <p class="text-gray-400 text-sm">Conversion-first site for a 24/7 NY bail bonds operator.</p>
+                        <span class="inline-flex items-center gap-1 mt-4 text-sm text-gray-500 group-hover:text-white transition">
+                            Preview <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+                
+                <a href="https://hbotusa.com" target="_blank" class="group block border border-white/10 rounded-2xl overflow-hidden hover-lift bg-black">
+                    <div class="h-48 bg-gradient-to-br from-cyan-900 to-gray-900 flex items-center justify-center">
+                        <span class="text-gray-600 text-4xl">🩺</span>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-sm text-gray-500">Healthcare / Hyperbaric</p>
+                        <h3 class="text-xl font-semibold mt-2 mb-2 group-hover:text-gray-300 transition">HBOT USA</h3>
+                        <p class="text-gray-400 text-sm">National brand + lead system for hyperbaric oxygen clinics.</p>
+                        <span class="inline-flex items-center gap-1 mt-4 text-sm text-gray-500 group-hover:text-white transition">
+                            Preview <span>↗</span>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-sm text-gray-500 uppercase tracking-widest mb-4">[ How we work ]</p>
+            <h2 class="text-3xl md:text-4xl font-semibold mb-16">Four steps. No fluff. No politics.</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 border border-white/10 rounded-2xl">
+                    <span class="text-4xl text-gray-600 font-semibold">01</span>
+                    <h3 class="text-xl font-semibold mt-4 mb-3">Discover</h3>
+                    <p class="text-gray-400 text-sm">Audit existing assets, customers, channels and funnel. Define the unfair advantage.</p>
+                </div>
+                
+                <div class="p-8 border border-white/10 rounded-2xl">
+                    <span class="text-4xl text-gray-600 font-semibold">02</span>
+                    <h3 class="text-xl font-semibold mt-4 mb-3">Strategy</h3>
+                    <p class="text-gray-400 text-sm">Positioning, offer, channel mix and a 90-day roadmap with measurable bets.</p>
+                </div>
+                
+                <div class="p-8 border border-white/10 rounded-2xl">
+                    <span class="text-4xl text-gray-600 font-semibold">03</span>
+                    <h3 class="text-xl font-semibold mt-4 mb-3">Execute</h3>
+                    <p class="text-gray-400 text-sm">Daily content, creative testing, technical SEO and weekly performance reviews.</p>
+                </div>
+                
+                <div class="p-8 border border-white/10 rounded-2xl">
+                    <span class="text-4xl text-gray-600 font-semibold">04</span>
+                    <h3 class="text-xl font-semibold mt-4 mb-3">Scale</h3>
+                    <p class="text-gray-400 text-sm">Double down on winners, build proprietary systems, and compound the brand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-24 px-6 bg-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <span class="text-5xl md:text-6xl font-semibold">20+</span>
+                    <p class="text-gray-500 mt-2">Clients served</p>
+                </div>
+                <div>
+                    <span class="text-5xl md:text-6xl font-semibold">50M+</span>
+                    <p class="text-gray-500 mt-2">Impressions earned</p>
+                </div>
+                <div>
+                    <span class="text-5xl md:text-6xl font-semibold">4.5x</span>
+                    <p class="text-gray-500 mt-2">Avg. ROAS</p>
+                </div>
+                <div>
+                    <span class="text-5xl md:text-6xl font-semibold">15+</span>
+                    <p class="text-gray-500 mt-2">Combined experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manifesto -->
+    <section id="about" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-sm text-gray-500 uppercase tracking-widest mb-4">[ Manifesto ]</p>
+            <h2 class="text-3xl md:text-5xl font-semibold mb-16 leading-tight">
+                We don't chase clicks. We build assets that compound — websites, audiences, and systems that keep paying you back, long after the campaign ends.
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 border-l border-white/20">
+                    <p class="text-sm text-gray-500 mb-2">/ 01 — Operator-led</p>
+                    <p class="text-gray-400">We've run brands. We don't outsource judgement to junior account managers.</p>
+                </div>
+                <div class="p-6 border-l border-white/20">
+                    <p class="text-sm text-gray-500 mb-2">/ 02 — Senior-only</p>
+                    <p class="text-gray-400">Strategy, creative and media handled by people who've done it before.</p>
+                </div>
+                <div class="p-6 border-l border-white/20">
+                    <p class="text-sm text-gray-500 mb-2">/ 03 — Built in public</p>
+                    <p class="text-gray-400">Weekly reporting. Shared dashboards. No mystery boxes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 px-6 bg-white/5">
+        <div class="max-w-7xl mx-auto">
+            <p class="text-sm text-gray-500 uppercase tracking-widest mb-4">[ Contact ]</p>
+            <h2 class="text-5xl md:text-7xl font-semibold mb-12">Let's talk</h2>
+            
             <div class="grid md:grid-cols-3 gap-12">
                 <div>
-                    <h3 class="text-2xl font-semibold mb-4">Long-term Thinking</h3>
-                    <p class="text-gray-400">We build brands that last. No shortcuts, no gimmicks—just solid strategy that compounds over time.</p>
+                    <p class="text-sm text-gray-500 mb-2">/ Contact</p>
+                    <p class="text-xl mb-2">Mark Cassara</p>
+                    <a href="mailto:Mark@legacystudio.cc" class="text-gray-400 hover:text-white transition">Mark@legacystudio.cc</a>
+                    <a href="tel:+16159565996" class="block text-gray-400 hover:text-white transition">615-956-5996</a>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-semibold mb-4">Data-Driven</h3>
-                    <p class="text-gray-400">Every decision backed by data. We measure, optimize, and scale what works.</p>
+                    <p class="text-sm text-gray-500 mb-2">/ Social</p>
+                    <a href="https://www.instagram.com/markcassara.legacy/" target="_blank" class="block text-gray-400 hover:text-white transition mb-2">Instagram ↗</a>
+                    <a href="https://www.linkedin.com/in/markcassara" target="_blank" class="block text-gray-400 hover:text-white transition">LinkedIn ↗</a>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-semibold mb-4">Full-Service</h3>
-                    <p class="text-gray-400">From SEO to paid media, social to content—we handle it all under one roof.</p>
+                    <p class="text-sm text-gray-500 mb-2">/ Studio</p>
+                    <p class="text-gray-400">Celina, TX → National operations</p>
+                    <p class="text-gray-500 text-sm mt-2">Independent. Senior-only. Built sustainably.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-24 px-6 bg-white/5">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-sm text-gray-500 uppercase tracking-widest mb-12">Services</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition">
-                    <h3 class="text-xl font-semibold mb-3">SEO</h3>
-                    <p class="text-gray-400 text-sm">Organic growth through technical SEO, content strategy, and link building.</p>
-                </div>
-                <div class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition">
-                    <h3 class="text-xl font-semibold mb-3">Paid Media</h3>
-                    <p class="text-gray-400 text-sm">PPC campaigns that convert across Google, Meta, and LinkedIn.</p>
-                </div>
-                <div class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition">
-                    <h3 class="text-xl font-semibold mb-3">Social</h3>
-                    <p class="text-gray-400 text-sm">Organic social strategy and community management.</p>
-                </div>
-                <div class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition">
-                    <h3 class="text-xl font-semibold mb-3">Content</h3>
-                    <p class="text-gray-400 text-sm">Blog posts, whitepapers, case studies, and thought leadership.</p>
-                </div>
-                <div class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition">
-                    <h3 class="text-xl font-semibold mb-3">Design</h3>
-                    <p class="text-gray-400 text-sm">Brand identity, web design, and visual storytelling.</p>
-                </div>
-                <div class="p-8 border border-white/10 rounded-2xl hover:bg-white/5 transition">
-                    <h3 class="text-xl font-semibold mb-3">Analytics</h3>
-                    <p class="text-gray-400 text-sm">Deep dives into your data to uncover growth opportunities.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-24 px-6">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-4xl md:text-5xl font-semibold mb-6">Ready to build?</h2>
-            <p class="text-xl text-gray-400 mb-10">Let's discuss how we can help your brand compound.</p>
-            <a href="https://calendly.com" target="_blank" class="inline-block px-10 py-5 bg-white text-black font-medium rounded-full hover:bg-gray-200 transition">
-                Book a Call
-            </a>
         </div>
     </section>
 
@@ -126,10 +442,7 @@
     <footer class="py-12 px-6 border-t border-white/10">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="text-sm text-gray-500">© 2026 Legacy Studio. All rights reserved.</div>
-            <div class="flex gap-6">
-                <a href="#" class="text-sm text-gray-500 hover:text-white transition">Privacy</a>
-                <a href="#" class="text-sm text-gray-500 hover:text-white transition">Terms</a>
-            </div>
+            <div class="text-sm text-gray-500">Currently accepting Q1 retainers</div>
         </div>
     </footer>
 </body>
